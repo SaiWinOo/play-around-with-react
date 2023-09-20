@@ -35,7 +35,7 @@ const useCustomReducer = (reducer, initialState) => {
     return [state,dispatch];
 };
 
-const Counter = () => {
+const CounterReducer = () => {
 
     const [state, dispatch] = useCustomReducer(counterReducer, initialState);
 
@@ -49,4 +49,4 @@ const Counter = () => {
     );
 };
 
-export default Counter;
+export default CounterReducer;
