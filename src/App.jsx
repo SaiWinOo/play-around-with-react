@@ -1,5 +1,6 @@
 import TestUseDefer from "./components/TestUseDefer.jsx";
 import ForwardRefe from "./components/ForwardRefe.jsx";
+import RenderComponent from "./components/RenderComponent.jsx";
 
 const App = () => {
 
@@ -11,7 +12,11 @@ const App = () => {
         {/*<OwnForm/>*/}
     {/*<PlayHooks/>*/}
     {/*<TestUseDefer/>*/}
-      <ForwardRefe/>
+    {/*  <ForwardRefe/>*/}
+      <RenderComponent   mouse={(position)=> <h1>Mouse move X - {position.x}  Y - {position.y}</h1>}/>
+      <RenderComponent   mouse={(position)=> <h1>Mouse move X - {position.x}  Y - {position.y}</h1>}/>
+      <RenderComponent   mouse={(position)=> <h1>Mouse move X - {position.x}  Y - {position.y}</h1>}/>
+      <RenderComponent   mouse={(position)=> <h1>Mouse move X - {position.x}  Y - {position.y}</h1>}/>
     </div>
   )
 }
